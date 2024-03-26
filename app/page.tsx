@@ -3,7 +3,7 @@ import SocialIcon from '@/components/SocialIcon';
 const siteMetadata = {
   title: 'TEMCRYPTO',
   email: 'info@temcrypto.com',
-  twitter: 'https://twitter.com/temcrypto',
+  twitter: 'https://twitter.com/TemCryptoApp',
   // linkedin: 'https://linkedin.com/temcrypto',
   telegram: 'https://t.me/temcrypto_support',
 };
