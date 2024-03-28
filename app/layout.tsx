@@ -5,6 +5,10 @@ import './globals.css';
 
 const nunito = Nunito({ weight: ['800', '900'], subsets: ['latin'] });
 
+// Set metadata
+const SITE_NAME = 'TEMCRYPTO';
+const SITE_URL = 'https://temcrypto.com';
+
 export const viewport: Viewport = {
   minimumScale: 1,
   initialScale: 1,
@@ -13,14 +17,9 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
   themeColor: [
     { media: '(prefers-color-scheme: dark)', color: '#1e293b' }, // INFO: tailwindcss color slate-800
-    // { media: '(prefers-color-scheme: light)', color: '#ffffff' },
     { media: '(prefers-color-scheme: light)', color: '#1e293b' },
   ],
 };
-
-// Set metadata
-const SITE_NAME = 'TEMCRYPTO';
-const SITE_URL = 'https://temcrypto.com';
 
 export const metadata: Metadata = {
   title: SITE_NAME,
@@ -34,7 +33,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    // card: 'summary_large_image',
     creator: '@TemCryptoApp',
   },
 };
