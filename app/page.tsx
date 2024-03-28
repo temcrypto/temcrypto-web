@@ -2,6 +2,7 @@ import SocialIcon from '@/components/SocialIcon';
 
 const siteMetadata = {
   title: 'TEMCRYPTO',
+  description: 'Pay and get paid to Pix using crypto.',
   email: 'info@temcrypto.com',
   twitter: 'https://twitter.com/TemCryptoApp',
   // linkedin: 'https://linkedin.com/temcrypto',
@@ -10,9 +11,12 @@ const siteMetadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="items-center">
-        <h1>{siteMetadata.title}</h1>
+    <main className="flex min-h-screen flex-col justify-around p-24">
+      <div className="flex flex-col justify-center items-center text-center">
+        <h1 className="text-4xl">{siteMetadata.title}</h1>
+        <h2 className="text-xl mt-8 text-slate-500 dark:text-slate-400">
+          {siteMetadata.description}
+        </h2>
       </div>
 
       <footer className="w-full">
@@ -37,7 +41,7 @@ export default function Home() {
               size={5}
             />
           </div>
-          <div className="flex flex-row space-x-1 text-sm text-gray-500 dark:text-gray-400">
+          <div className="flex flex-row space-x-1 text-lg text-slate-500 dark:text-slate-400">
             <div>{`© ${new Date().getFullYear()}`}</div>
             <div>temcrypto.com</div>
           </div>
