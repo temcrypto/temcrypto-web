@@ -19,26 +19,26 @@ export default function Home() {
         </h2>
       </div>
 
-      <footer className="w-full pb-6">
+      <footer className="w-full mx-auto max-w-screen-xl p-8">
         <div className="flex flex-col items-center justify-between space-y-5 sm:flex-row-reverse sm:space-y-0">
           <div className="flex flex-row space-x-7">
             <SocialIcon
               title="Email us"
               kind="mail"
               href={`mailto:${siteMetadata.email}`}
-              size={30}
+              size={35}
             />
             <SocialIcon
               title="Follow us on X"
               kind="twitter"
               href={siteMetadata.twitter}
-              size={30}
+              size={35}
             />
             <SocialIcon
               title="Contact us on Telegram"
               kind="telegram"
               href={siteMetadata.telegram}
-              size={30}
+              size={35}
             />
           </div>
           <div className="flex flex-row space-x-1 text-lg text-slate-500 dark:text-slate-400">
