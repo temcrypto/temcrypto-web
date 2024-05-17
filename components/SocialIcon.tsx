@@ -11,13 +11,20 @@ const components = {
 };
 
 type SocialIconProps = {
+  className?: string;
   kind: keyof typeof components;
   href: string | undefined;
   size?: number;
   title?: string;
 };
 
-const SocialIcon = ({ kind, href, title, size = 8 }: SocialIconProps) => {
+const SocialIcon = ({
+  className = '',
+  kind,
+  href,
+  title,
+  size = 8,
+}: SocialIconProps) => {
   if (
     !href ||
     (kind === 'mail' &&
@@ -29,16 +36,14 @@ const SocialIcon = ({ kind, href, title, size = 8 }: SocialIconProps) => {
 
   return (
     <a
-      className="text-gray-500 transition hover:text-gray-600 dark:text-gray-400"
+      className={`text-gray-500 transition hover:text-gray-600 dark:text-gray-400`}
       target="_blank"
       rel="noopener noreferrer"
       href={href}
       title={title}
     >
       <span className="sr-only">{kind}</span>
-      <SocialSvg
-        className={`fill-current text-gray-700 hover:text-primary-500 dark:text-gray-400 dark:hover:text-yellow-400 h-${size} w-${size}`}
-      />
+      <SocialSvg className={`fill-current ${className} h-${size} w-${size}`} />
     </a>
   );
 };
