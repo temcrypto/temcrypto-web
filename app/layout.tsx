@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { type Metadata, type Viewport } from 'next';
 import { Nunito } from 'next/font/google';
 

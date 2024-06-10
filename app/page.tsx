@@ -1,30 +1,22 @@
 import Logo from '@/components/Logo';
 import SocialIcon from '@/components/SocialIcon';
 
-const siteMetadata = {
-  title: '',
-  description: '',
-  email: 'info@temcrypto.com',
-  twitter: 'https://twitter.com/TemCryptoApp',
-  telegram: '',
-};
-
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between">
-      <div className="grow flex flex-col justify-center items-center text-center px-6">
+      <div className="flex grow flex-col items-center justify-center px-6 text-center">
         <Logo className="text-4xl" />
 
-        <h2 className="text-xl text-slate-400 dark:text-slate-300 mt-14">
+        <h2 className="mt-14 text-xl text-slate-400 dark:text-slate-300">
           Explore where digital freedom meets real-world ease.
         </h2>
 
-        <h3 className="text-sm text-transparent animate-background bg-[length:_400%_400%] [animation-duration:_4s] bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-400 uppercase mt-16">
+        <h3 className="mt-16 animate-background bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-400 bg-[length:_400%_400%] bg-clip-text text-sm uppercase text-transparent [animation-duration:_4s]">
           <div className="mt-6">Smart • Gasless • Non-Custodial</div>
         </h3>
       </div>
 
-      <footer className="w-full mx-auto max-w-screen-xl p-8">
+      <footer className="mx-auto w-full max-w-screen-xl p-8">
         <div className="flex flex-col items-center justify-between space-y-5 sm:flex-row-reverse sm:space-y-0">
           <div className="flex flex-row space-x-7">
             <SocialIcon
